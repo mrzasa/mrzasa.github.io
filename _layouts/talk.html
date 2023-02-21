@@ -1,0 +1,29 @@
+---
+layout: page
+---
+  <h1>{{ page.title | escape }}</h1>
+  <p>
+    Delivered at: {{ page.conferences }}
+  </p>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {%- if page.video_id -%}
+      {% include elements/video.html id=page.video_id %}
+    {%- endif -%}
+
+    {%- if page.slides_link -%}
+      {% include elements/button.html link=page.slides_link text="Slides" style="outline-dark"  %}
+    {%- endif -%}
+
+    {%- if page.link -%}
+      {% include elements/button.html link=page.link text=page.link_title style="outline-dark"  %}
+    {%- endif -%}
+
+    {%- if page.description -%}
+    <p>
+      {{ page.description }}
+    </p>
+    {%- endif -%}
+
+    {{ content }}
+  </div>

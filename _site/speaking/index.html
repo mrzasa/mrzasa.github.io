@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Speaking">
+  <meta property="og:description" content="Software Engineer. Technical Leader. Knowledge Sharing Advocate.">
+  <meta property="og:image" content="https://i.imgur.com/uyDNQnn.jpg">
+
+  <title>Speaking</title>
+  <meta name="description" content="Software Engineer. Technical Leader. Knowledge Sharing Advocate.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Maciej Rząsa</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/writing/">Writing</a>
+
+      <a class="nav-item nav-link active" href="/speaking/">Speaking</a>
+
+      <a class="nav-item nav-link " href="/open_source/">Open Source</a>
+
+      <a class="nav-item nav-link " href="/teaching/">Teaching</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <div class="home"><h1 class="page-heading">Speaking</h1><ul class="post-list">
+      
+      <li class="post-description">
+        <span class="post-meta">rg-dev, RRUG </span>
+        <h4>
+          <a class="talk-link" href="/speaking/debug_like_scientists">
+            Let&#39;s Debug Like Scientists
+          </a>
+        </h4>
+
+        <div>I share a set of tools to build a collaborative process of debugging. I show how centuries-old scientific practices can be adopted in our young profession. All is interleaved with real-world stories that prove those methods to be effective. </div>
+      </li>
+      <li class="post-description">
+        <span class="post-meta">RailsConf 2021, RubyDay.it 2021, EMEA on Rails 2021, RubyConf.br 2021, BuildStuff Lithuania 2022 </span>
+        <h4>
+          <a class="talk-link" href="/speaking/api-optimisation">
+            API Optimisation Tale: Monitor, Fix and Deploy (on Friday)
+          </a>
+        </h4>
+
+        <div>Lessons learned during extraction of a complex service from 1M+ LOC monolith. During this project we migrated and internal API from REST to GraphQL optimising it heavily. I talk about old patterns in a new setting, incremental changes and broken production. </div>
+      </li>
+      <li class="post-description">
+        <span class="post-meta">RRUG </span>
+        <h4>
+          <a class="talk-link" href="/speaking/database_internals">
+            Database Internals (series of talks)
+          </a>
+        </h4>
+
+        <div>I've given a series of in-depth talks about database internals at Rzeszów Ruby User Group meetups: <ul> <li>Why Doesn't the Database Use My Index? - how the indexes are built, and how to use them efficiently</li> <li>SELECT or There and Back Again - query processing details, from parsing all the way down to storage and back to the client</li> <li>Full-text Search Inside Out - inverted index explained with simple implementation in Ruby as illustration</li> </ul> </div>
+      </li>
+      <li class="post-description">
+        <span class="post-meta">4Developers 2018, SegFault 2018, SPA Software in Practice London 2018, Hack Yeah 2018 </span>
+        <h4>
+          <a class="talk-link" href="/speaking/regex_performance">
+            Writing Slow Regexp is Easier than You Think and Want it to Be
+          </a>
+        </h4>
+
+        <div>Talks and workshops about performance of regular expressions. I show the internals of a regex engine and this let's me explain how various types of patterns are processed. Finally I give real-word example of regular expressions that harmed production applications. </div>
+      </li>
+      <li class="post-description">
+        <span class="post-meta">4Developers 2019, Rzemiosło.IT 2019 </span>
+        <h4>
+          <a class="talk-link" href="/speaking/senior_developer">
+            Writing Slow Regexp is Easier than You Think and Want it to Be
+          </a>
+        </h4>
+
+        <div>I gave a short talk and moderated a discussion panel about being a senior developer. We discussed traits of senior developer, career progression and title inflation. </div>
+      </li>
+      <li class="post-description">
+        <span class="post-meta">wroc_love.rb 2017, 4Developers 2017 </span>
+        <h4>
+          <a class="talk-link" href="/speaking/we_all_build_distributed">
+            We All Build Distributed Systems
+          </a>
+        </h4>
+
+        <div>After working with a system built with only 3 apps - web UI, Android client and API backend I relalised that a lot of the problems inherent to distributed systems happen also in this simple setting. In this talk I describe how we dealt with offline mode, data synchronisation and error resolution </div>
+      </li></ul>
+
+    </div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Maciej Rząsa</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.github.com/mrzasa"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/maciejrzasa"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/mjrzasa"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
