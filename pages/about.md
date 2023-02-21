@@ -8,8 +8,7 @@ weight: 1
 # **About Me**
 
 
-
-Hi, I am **Maciej**, but friends call me **Maciek** :wave:,
+Hi, I am **Maciej**, but friends call me **Maciek** :wave:
 
 I'm a **software engineer** with over decade of experience interested in text processing and distributed systems. I built business applications from scratch, developed big legacy systems (1M+ LOC), extracted services, worked with text processing and created tools for development productivity.
 Specialising in Ruby I spend most of the time working with Ruby ecosystem, I contributed to the community in a series of [micro-contributions](/open_source). I'm more than happy though to pick up a technology that is right for the job - in the past I've worked with JavaScript, Java and now I'm learning Golang. I'm always curious to see how the tools I use work, so I often pry into their internals (see what I learnt about [databases](/speaking/database_internals)). This habit helped me develop [debugging](/speaking/debug_like_scientists) as my hidden power.

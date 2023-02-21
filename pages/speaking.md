@@ -23,7 +23,7 @@ weight: 3
     <ul class="post-list">
       {% for talk in site.talks reversed %}
       <li class="post-description">
-        <span class="post-meta">{{ talk.conferences }} </span>
+        <span class="post-meta  text-secondary">{{ talk.conferences }} </span>
         <h4>
           <a class="talk-link" href="{{ talk.url | relative_url }}">
             {{ talk.title | escape }}
