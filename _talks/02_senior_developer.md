@@ -1,8 +1,8 @@
 ---
 layout: talk
 slug: "senior_developer"
-title: "Writing Slow Regexp is Easier than You Think and Want it to Be"
-description: I gave a short talk and moderated a discussion panel about being a senior developer. We discussed traits of senior developer, career progression and title inflation.
+title: "Who is a Senior Developer"
+description: I interviewed several engineers and managers to understand how they perceive seniority in our industry. I summarised the findings in a short talk. As a follow-up I also moderated a discussion panel about being a senior developer. We discussed traits of senior developer, career progression and title inflation.
 
 conferences: 4Developers 2019, Rzemiosło.IT 2019
 video_id: "q_lbfBFL8tg"
