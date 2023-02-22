@@ -23,7 +23,7 @@ High-level [Elasticsearch](https://www.elastic.co/elasticsearch/) Ruby framework
 {% include tag.html tag='#Ruby' %}
 
 I noticed that I couldn't use one of my favourite debugging features in [Pry](https://github.com/pry/pry) when [FakeFS](https://github.com/fakefs/fakefs) is active: `show-source` raised errors.
-When I fixed this issue for Pry, I noticed that I can use similar technique for [IRB](https://github.com/ruby/irb). It was a bit more difficult, because I had to unmock `Kernel#open`.
+When I fixed this issue for Pry, I noticed that I can use a similar technique for [IRB](https://github.com/ruby/irb). It was a bit more difficult because I had to unmock `Kernel#open`.
 * [Fix binding.irb inside FakeFS](https://github.com/fakefs/fakefs/pull/488)
 * [Assign FS constants to make them available in Pry](https://github.com/fakefs/fakefs/pull/485)
 

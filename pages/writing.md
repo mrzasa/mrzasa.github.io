@@ -11,8 +11,8 @@ weight: 2
 
 * [Billing Extraction: A Tale of GraphQL Internal API Optimization](https://www.toptal.com/graphql/graphql-internal-api-optimization) lessons learned during migrating an API from REST to GraphQL
 * [Timestamp Truncation: A Ruby on Rails ActiveRecord Tale](https://www.toptal.com/ruby-on-rails/timestamp-truncation-rails-activerecord-tale) debugging a flaky test,
-coping with differences in date representation betwen Rails and PostgreSQL
-* [Performance of Regular Expression](https://medium.com/textmaster-engineering/performance-of-regular-expressions-81371f569698) analysis of the internals of regex engines, this analysis allows us to understand performance characteristics of various types of patters and dangers related to abusing regex.
+coping with differences in date representation between Rails and PostgreSQL
+* [Performance of Regular Expression](https://medium.com/textmaster-engineering/performance-of-regular-expressions-81371f569698) analysis of the internals of regex engines, this analysis allows us to understand performance characteristics of various types of patterns and dangers related to abusing regex.
 
 ## Reading Lists
 
