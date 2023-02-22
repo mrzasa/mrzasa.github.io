@@ -2,7 +2,7 @@
 title               : Maciej Rząsa
 description         : >-
                       Software Engineer. Technical Leader. Knowledge Sharing Advocate.
-baseurl             : "maciej.rzasa.dev"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             : "" # "maciej.rzasa.dev"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : mrzasa/mrzasa.github.io
 remote_theme        : YoussefRaafatNasry/portfolYOU
 
