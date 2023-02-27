@@ -32,6 +32,7 @@ coping with differences in date representation between Rails and PostgreSQL
 * [Passing :test caused ArgumentError: wrong number of arguments (given 0, expected 2..3)](https://stackoverflow.com/a/57065339/580346) #Ruby #RubyOnRails
 * [Why `a[0]` is returning 1 and `a[1]` returning 0 and so on?](https://stackoverflow.com/a/58814802/580346) #Ruby
 * [Can I exclude some concrete urls from `<url-pattern>` inside `<filter-mapping>`? ](https://stackoverflow.com/a/9836641/580346) #Java
+* [Why is `to_ary` called from a double-splatted parameter in a code block?](https://stackoverflow.com/a/57191433/580346) #Ruby
 
 ## Scientific Publications
 
