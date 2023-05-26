@@ -19,6 +19,7 @@ nav_exclude:                                            # The following paths ar
   - pages/index.md
   - pages/landing.md
   - pages/blog.html
+  - pages/job_search.md
   - documentation/**                           # For Documentation Only
 
 
