@@ -33,6 +33,7 @@ I've collected articles (with some occasional video/audio content) that helped i
 	* [stackoverflow.blog/2017/04/27/how-to-talk-about-yourself-in-an-interview](https://stackoverflow.blog/2017/04/27/how-to-talk-about-yourself-in-an-interview)
 	* behavioral  - you'd better come with prepared good stories, everytime you answer "I can't recall any situations like this" you're loosing an opportunity to show your advantages
 		* [simpleprogrammer.com/ace-behavioral-interview](https://simpleprogrammer.com/ace-behavioral-interview)
+                * [41 behavioural questions](https://www.themartec.com/insidelook/behavioral-interview-questions) 		
 	* system design
 		* [interviewing.io/guides/system-design-interview](https://interviewing.io/guides/system-design-interview)
 		* [blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews)
