@@ -44,7 +44,7 @@ Regex is one of main interests. Over the years I've been learning about them, I'
   * [Atom editor (2016)](http://davidvgalbraith.com/how-i-fixed-atom/)
 * ReDoS research:
   * [Virginia Tech Blogpost](https://medium.com/bugbountywriteup/introduction-987fdc4c7b0)
-  * [Virginia Tech Paper](http://people.cs.vt.edu/~davisjam/downloads/publications/DavisCoghlanServantLee-EcosystemREDOS-ESECFSE18.pdf
+  * [Virginia Tech Paper](http://people.cs.vt.edu/~davisjam/downloads/publications/DavisCoghlanServantLee-EcosystemREDOS-ESECFSE18.pdf)
   * [SoK: Demystifying Regular Expression Denial of Service](https://arxiv.org/html/2406.11618v1) ReDoS survey
 * Optimisations
   * [Using Selective Memoization to Defeat Regular Expression Denial of Service (ReDoS)](https://ieeexplore.ieee.org/document/9519427)
@@ -60,7 +60,7 @@ Regex is one of main interests. Over the years I've been learning about them, I'
   * [Regular Expressions and Onigmo, the Ruby regular expression engine](https://hparker.svbtle.com/regular-expressions-and-onigmo)
   * [Rust Regex development](https://burntsushi.net/regex-internals/)
   * [Very ambitious persional project - building an own regex engine, described step-by-step](https://www.abstractsyntaxseed.com/blog/regex-engine/introduction)
-  * [Maciej Rząsa (yours truly], talk: Magical journey through regex engine internals](https://www.youtube.com/watch?v=ZM2h7GxdKL8) 
+  * [Maciej Rząsa (yours truly), talk: Magical journey through regex engine internals](https://www.youtube.com/watch?v=ZM2h7GxdKL8) 
 * Code
   * [Onigmo - Ruby library to debug regex engine internals (parsing and compiling](https://github.com/kddnewton/onigmo)
   * [Python `re` - regular expression engine source code - in python](https://github.com/python/cpython/tree/main/Lib/re)
