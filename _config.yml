@@ -20,6 +20,8 @@ nav_exclude:                                            # The following paths ar
   - pages/landing.md
   - pages/blog.html
   - pages/job_search.md
+  - pages/regex.md
+  - pages/writing/**
   - documentation/**                           # For Documentation Only
 
 
@@ -49,7 +51,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
+permalink: /hb/:title
 
 
 ### Collections ###
