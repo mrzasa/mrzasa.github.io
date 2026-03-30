@@ -49,18 +49,18 @@ Regex is one of main interests. Over the years I've been learning about them, I'
 * Optimisations
   * [Using Selective Memoization to Defeat Regular Expression Denial of Service (ReDoS)](https://ieeexplore.ieee.org/document/9519427)
   * [Ruby Core: memoisation that makes many regex polynomial instead of exponential](https://bugs.ruby-lang.org/issues/19104)
-  * V8 (JavaScript) optimisations: [1](https://v8.dev/blog/regexp-tier-up), [2](https://v8.dev/blog/speeding-up-regular-expressions)
+  * V8 (JavaScript) optimisations: [Regexp Tier Up](https://v8.dev/blog/regexp-tier-up) and [Speeding Up Regular Expressions](https://v8.dev/blog/speeding-up-regular-expressions)
   * [.Net 7 Regex improvements](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/)
-  * [.Net 5 Regex performance improvements](devblogs.microsoft.com/dotnet/regex-performance-improvements-in-net-5/)
+  * [.Net 5 Regex performance improvements](https://devblogs.microsoft.com/dotnet/regex-performance-improvements-in-net-5/)
   * [V8 (JavaScript) Regex series](https://v8.dev/blog/tags/regexp) esp
     * [Improving V8 regular expressions](https://v8.dev/blog/regexp-tier-up)
-    * [An additional non-backtracking regex engine](https://v8.dev/blog/non-backtracking-regexp)  
+    * [An additional non-backtracking regex engine](https://v8.dev/blog/non-backtracking-regexp)
 * Internals
   * [.Net Symbolic regex matcher](https://www.microsoft.com/en-us/research/wp-content/uploads/2019/02/SRM_tacas19.pdf)
   * [Regular Expressions and Onigmo, the Ruby regular expression engine](https://hparker.svbtle.com/regular-expressions-and-onigmo)
   * [Rust Regex development](https://burntsushi.net/regex-internals/)
   * [Very ambitious persional project - building an own regex engine, described step-by-step](https://www.abstractsyntaxseed.com/blog/regex-engine/introduction)
-  * [Maciej Rząsa (yours truly), talk: Magical journey through regex engine internals](https://www.youtube.com/watch?v=ZM2h7GxdKL8) 
+  * [Maciej Rząsa (yours truly), talk: Magical journey through regex engine internals](https://www.youtube.com/watch?v=ZM2h7GxdKL8)
 * Code
   * [Onigmo - Ruby library to debug regex engine internals (parsing and compiling](https://github.com/kddnewton/onigmo)
   * [Python `re` - regular expression engine source code - in python](https://github.com/python/cpython/tree/main/Lib/re)

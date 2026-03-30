@@ -7,6 +7,10 @@ tags: ["debugging", "Ruby"]
 
 It was a debugging session under severe pressure. There was a (virtual) mob with (virtual) pitchforks at our (virtual) door yelling, “Remove the gem! Remove the gem!”. They had a point -- the gem (Ruby library) we had added was crashing CI e2e test runs a few times per day. It slowed down our fellow engineers in a dozen teams, so they just wanted to remove the obstacle. But we relied on this gem, so we wanted to keep it. It's not what you think -- we weren't just selfish.
 
+<img src='/assets/img/hb/crowd.png' />
+
+You can’t really blame our colleagues  for quickly jumping to the conclusion that the [gem ArLazyPreload](https://github.com/DmitryTsepelev/ar_lazy_preload) should be removed. After all, it was the source of the error that made the tests flaky. Its name was repeated at least 8 times in the stack trace, and it had been added recently.
+
 ```
 Did you mean?  association_needs_preload?
   Rails Exception:, #<NoMethodError: undefined method `association_tree'
@@ -29,13 +33,12 @@ Did you mean?  association_needs_preload?
   gems/activerecord-6.0.3.2/lib/active_record/associations/association.rb:65:
     in `reload'
 ```
-You can’t really blame our colleagues  for quickly jumping to the conclusion that the gem `ar_lazy_preload` should be removed. After all, it was the source of the error that made the tests flaky. Its name was repeated at least 8 times in the stack trace, and it had been added recently.
 
 We were almost sure that  it wasn’t the gem to blame, simply because we had done due diligence before adding it. It sounds like confirmation bias -- and maybe it was -- because the build issue was intermittent. Still, it _seemed_ to us that the flakiness wasn’t correlated with this change.
 
-Looking high and low to prove our hypothesis, at one moment we even thought we had discovered a bug in the Rails framework. But it wasn’t Rails that was to blame The issue was hidden in a distant region of our own code.
+Looking high and low to prove our hypothesis, at one moment we even thought we had discovered a bug in the Rails framework. But it wasn’t Rails that was to blame. The issue was hidden in a distant region of our own code.
 
-We started digging in an obvious place -- the exact line of the gem code where the error was raised:
+We started digging in an obvious place -- the exact line of the [gem code where the error was raised](https://github.com/DmitryTsepelev/ar_lazy_preload/blob/44ba76ecb36fa4016e22ee1a4c8ef201d9f9f800/lib/ar_lazy_preload/associated_context_builder.rb#L48-L53):
 ```ruby
 # ar_lazy_preload/lib/ar_lazy_preload/associated_context_builder.rb
 class AssociatedContextBuilder
@@ -61,17 +64,16 @@ We were puzzled. How could it be that the error was raised from a line that is n
 I found some supporting evidence. There was a code path that was changing the configuration:
 
 ```ruby
-# Enables ArLazyPreload auto_preload for GraphQL query with operations field
-class ArLazyPreloadOperationsInstrumenter
+# Enables ArLazyPreload requests with operations field
+class ArLazyPreloadInstrumenter
   class << self
-    OPERATIONS = 'operations'.freeze
     DEFAULT_AUTO_PRELOAD = ArLazyPreload.config.auto_preload
 
-    def before_query(query)
+    def before_request(query)
       ArLazyPreload.config.auto_preload = true if has_operations_field?(query)
     end
 
-    def after_query(_query)
+    def after_request(_query)
       ArLazyPreload.config.auto_preload = DEFAULT_AUTO_PRELOAD
     end
   end
@@ -96,4 +98,4 @@ We were running e2e tests on multi-threaded Puma, sending many requests in paral
 
 The root cause was that we were changing mutable config shared between threads -- a config that was supposed to be set once before the gem was initialised and then never updated. This was a piece of evidence strong enough to justify removing the class that was changing the config and asking the authors to provide a more robust implementation of this feature.
 
-What was interesting to me was that the fix actually started with a wild guess (“what if it’s a race condition?”) -- a hypothesis that connected all the dots.Instead of implementing a costly (and uncertain) fix, I prepared a cheap experiment that gave me confidence and justified the more expensive changes. It paid off to stick to our guns amid the growing mob pressure. The issue wasn't in the gem itself, but in the assumption that the configuration could be mutated.
+What was interesting to me was that the fix actually started with a wild guess (“what if it’s a race condition?”) -- a hypothesis that connected all the dots. Instead of implementing a costly (and uncertain) fix, I prepared a cheap experiment that gave me confidence and justified the more expensive changes. It paid off to stick to our guns amid the growing mob pressure. The issue wasn't in the gem itself, but in the assumption that the configuration could be mutated.
