@@ -59,6 +59,7 @@ Regex is one of main interests. Over the years I've been learning about them, I'
   * [.Net Symbolic regex matcher](https://www.microsoft.com/en-us/research/wp-content/uploads/2019/02/SRM_tacas19.pdf)
   * [Regular Expressions and Onigmo, the Ruby regular expression engine](https://hparker.svbtle.com/regular-expressions-and-onigmo)
   * [Rust Regex development](https://burntsushi.net/regex-internals/)
+  * [Feline Regex Requests](https://cataas.com/cat/says/can%20i%20has%20regex?)
   * [Very ambitious persional project - building an own regex engine, described step-by-step](https://www.abstractsyntaxseed.com/blog/regex-engine/introduction)
   * [Maciej Rząsa (yours truly), talk: Magical journey through regex engine internals](https://www.youtube.com/watch?v=ZM2h7GxdKL8)
 * Code
